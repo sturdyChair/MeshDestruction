@@ -1,0 +1,1397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="98.Default">
+      <UniqueIdentifier>{e5c29dec-4a71-4962-8dd3-0889e68e9ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Defines">
+      <UniqueIdentifier>{0bbcf347-c7d8-47be-8707-0c90ba7ee5dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels">
+      <UniqueIdentifier>{a031842c-8744-4d5b-8e73-d8ad71c3c4c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\99.MainApp">
+      <UniqueIdentifier>{d2b0ac0e-723f-41ef-96ad-3798bcc5e760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\02.Loading">
+      <UniqueIdentifier>{52a69189-b1ec-4dfb-a09c-86ef0c1b0a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\03.Logo">
+      <UniqueIdentifier>{5998c69b-f909-4c99-b341-9c1868cc32d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\04.PlayLevel">
+      <UniqueIdentifier>{c287eef7-14dc-4525-a742-214e906b6a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\04.PlayLevel\0.FirstStage">
+      <UniqueIdentifier>{9cdb5977-89d9-49be-aedf-b297c5e4ac8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\04.PlayLevel\1.SecondStage">
+      <UniqueIdentifier>{5a2da3e3-0a95-4c31-ac93-3ce9174b3184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\04.PlayLevel\2.ThirdStage">
+      <UniqueIdentifier>{db31a07e-b9ef-4b51-be42-10cda36e9b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\05.TestRoom">
+      <UniqueIdentifier>{89d65f24-4456-4ac1-af9a-9c842e11a7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\02.Loading\Loader">
+      <UniqueIdentifier>{74a399cd-be30-4d7f-8b79-d03cb3b3c7e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject">
+      <UniqueIdentifier>{827c8687-5a90-44ce-bd21-8412d4e16f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\00.BackGround">
+      <UniqueIdentifier>{7d58caac-7bc3-42a2-a683-42d77766352c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\99.Camera">
+      <UniqueIdentifier>{e589486d-632e-46d1-bae4-d6fd71d2332a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\99.Camera\ToolCamera">
+      <UniqueIdentifier>{5bae7bfc-037b-4569-bb06-7149c461f5f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\01.SkyBox">
+      <UniqueIdentifier>{13cd5334-dbd1-4ed9-a9d1-2b872eca06c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Shader">
+      <UniqueIdentifier>{c9aabaa4-d845-43da-abed-96709c402a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager">
+      <UniqueIdentifier>{e08242ad-277b-41a7-863b-6f249d86d043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\PlayerManager">
+      <UniqueIdentifier>{504c1564-f261-4a09-bb2d-282dc3a8db15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\01.Tool">
+      <UniqueIdentifier>{6e2e1ad4-209e-49e0-8c5b-414d8ac5fa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\02.TestModel">
+      <UniqueIdentifier>{e25ab389-60fc-4895-acd2-d923802fe339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\ImguiManager">
+      <UniqueIdentifier>{de1a5adc-0e97-421b-bcb2-8da6a0039ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\GameManager">
+      <UniqueIdentifier>{194846e6-196f-414f-a686-892f86ca0d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect">
+      <UniqueIdentifier>{82305449-a5c5-47ea-a589-0fb6237a87f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\00.TestEffect">
+      <UniqueIdentifier>{70c4ef06-b8db-4c77-abf3-328ded8ad345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\ParticleEffect">
+      <UniqueIdentifier>{5e33931e-6808-475e-b080-5c0fbacf5e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\MeshEffect">
+      <UniqueIdentifier>{6f3321fe-eb0f-4319-af6a-549114f7574d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\CUi_Mgr">
+      <UniqueIdentifier>{5af8bba9-8f98-49f7-824b-b2e0acf15ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi">
+      <UniqueIdentifier>{2e39ff86-2a2d-4945-a9d9-061a26379aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D">
+      <UniqueIdentifier>{3d34d79b-8c96-4409-a3c7-2bec39c083b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_Default">
+      <UniqueIdentifier>{567e8c81-7606-4d2d-a773-6950b4a69045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map">
+      <UniqueIdentifier>{7054852e-1dbd-4999-8dc1-b1192684c9bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map\Static">
+      <UniqueIdentifier>{58114548-a9b9-441e-8580-4660a5a215be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\99.Camera\PlayerCamera">
+      <UniqueIdentifier>{57a50a3d-2f7a-43e5-aa03-26bb001cb141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\11. Trigger">
+      <UniqueIdentifier>{1f9ac48b-d3d1-4493-81fd-418aae6fe795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\96.EffectTool">
+      <UniqueIdentifier>{424cd338-d51d-43f2-a961-8e5c9f9ad723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\97.MapTool">
+      <UniqueIdentifier>{d70f995f-1a07-4dc5-8410-c5ebe38912b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\98.AnimTool">
+      <UniqueIdentifier>{df8c047a-cdb2-40c6-ae1b-f2cf4f1e238f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\Prototype">
+      <UniqueIdentifier>{b2c89e71-3a0d-4c65-b31a-beebbfbe0657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\Prototype\EffectBase">
+      <UniqueIdentifier>{04fc7204-d4b1-4459-ac3e-6a60f5edfaf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\Prototype\EffectUnion">
+      <UniqueIdentifier>{52d2906e-72f5-4cce-a9eb-e6905f7b31ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\UnionEffect">
+      <UniqueIdentifier>{4f7dbbb5-114d-4efc-bf33-dfa866544c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Player">
+      <UniqueIdentifier>{5ca94f82-ebda-4b51-838d-e355a5e40088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Player\00. Vergil">
+      <UniqueIdentifier>{08ed2319-7e77-4141-a2df-f03f4d45bb67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect">
+      <UniqueIdentifier>{11ccdb81-34c8-4080-ba11-5dd65d6b3eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95.Beat_Manager">
+      <UniqueIdentifier>{a69345fe-0ae5-4b4e-90c2-3abc224c0337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\SlashBig">
+      <UniqueIdentifier>{d86fdd49-2c36-4785-9b02-2c8e68b2b015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Player\01. Chai">
+      <UniqueIdentifier>{48c7d211-513a-4399-804c-30ef8bbb6875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\05.TestRoom\GridBox">
+      <UniqueIdentifier>{f9cf21cb-1397-4ce6-a0c7-35127281448a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters">
+      <UniqueIdentifier>{0c080312-fe0e-40f4-98ee-bfa470420bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber">
+      <UniqueIdentifier>{5358bf12-6d7f-470d-9481-d881e343181f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State">
+      <UniqueIdentifier>{371f2429-787f-4ebd-93bb-462ad13726e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State\Attack">
+      <UniqueIdentifier>{958d68db-6e14-4b25-b5d2-35ab48aa7383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State\Idle">
+      <UniqueIdentifier>{97e720d4-5d3b-4baf-a411-70418c2100cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State\Move">
+      <UniqueIdentifier>{96b3f234-4736-40dc-9a6a-974d978aba87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\EnemySlash">
+      <UniqueIdentifier>{a127173a-687f-46d6-8b5a-62d8df025df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem">
+      <UniqueIdentifier>{40b68833-682b-4a98-b8da-d35f990856b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatMarker">
+      <UniqueIdentifier>{ce30f3f9-b0eb-4703-ba42-7ead9f13e0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_RankSystem">
+      <UniqueIdentifier>{f3692f72-dad6-4c98-bb05-f3a9749d1a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboNum">
+      <UniqueIdentifier>{3c250e20-0412-407f-b9a5-7cdc91ea8db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboWordHits">
+      <UniqueIdentifier>{b8956761-7f64-4ab8-96ea-798a29b4826f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_ScoreSystem">
+      <UniqueIdentifier>{028be19a-71f0-40f1-b1eb-0ebb1e4c539d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Player\01. Chai\Guitar">
+      <UniqueIdentifier>{190c921b-5348-4cfa-818d-8215f313624f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Player\01. Chai\Guitar\Basic_Guitar">
+      <UniqueIdentifier>{97aeaaa5-ada4-4235-b53c-dd73659d6be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Flare">
+      <UniqueIdentifier>{8cbec88c-3f3c-4fbc-a937-e33866f02ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Impact">
+      <UniqueIdentifier>{9db7fc7c-7f75-4558-9921-35f742b7eb0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Impact\Ring">
+      <UniqueIdentifier>{2b92fce9-b3bc-4f83-86dd-ce585f1f0e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Impact\Shock">
+      <UniqueIdentifier>{016c916a-7052-4949-abf1-3052fff71c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Impact\Spark">
+      <UniqueIdentifier>{e8905c85-9195-4ba6-b9b6-80832d5a3035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\Weapon">
+      <UniqueIdentifier>{bfd8d0b1-bd98-4ae8-8797-feb8c241be52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State\Damaged">
+      <UniqueIdentifier>{ce2f78fb-fe29-4311-a55d-1c5e5147b8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Flare">
+      <UniqueIdentifier>{8cbec88c-3f3c-4fbc-a937-e33866f02ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_Loading">
+      <UniqueIdentifier>{1567a213-7178-43c4-a323-9db9cf5770f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingCat">
+      <UniqueIdentifier>{dffe3d26-2192-434d-85d3-4154bf9f7fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingNote">
+      <UniqueIdentifier>{82b9a3e5-e074-487a-9123-9603c5c06f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_PlayerBar">
+      <UniqueIdentifier>{709624bd-f768-4a25-9e55-035f6fb00752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerHP">
+      <UniqueIdentifier>{00614214-8926-4d84-bafe-ba0e34b5996f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerReverb">
+      <UniqueIdentifier>{26c13ba3-172a-4b3a-8937-aa0856f12191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Saber\State\Dead">
+      <UniqueIdentifier>{e84a083f-91dd-49b4-b8bb-2f7a51850e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_FinalResultSystem">
+      <UniqueIdentifier>{56c53b53-9805-45d0-b8bf-752d9eb6c7f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_FinalResultSystem\CUi_FinalResult">
+      <UniqueIdentifier>{08c94cb5-163b-40b9-be28-eb16959dacec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Beam">
+      <UniqueIdentifier>{f5bafa36-8e4c-4258-a2a9-d66e4dca3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\CombatManager">
+      <UniqueIdentifier>{2472ce96-f739-4382-a5f2-cd7a64ad3b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner">
+      <UniqueIdentifier>{2c0e07d5-e393-4b41-be4d-4cb2c32b37d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State">
+      <UniqueIdentifier>{0c3b6024-f285-46ed-91d0-2119387490f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State\Idle">
+      <UniqueIdentifier>{dba0556e-b43e-4ae4-b86d-8d7216f70931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State\Attack">
+      <UniqueIdentifier>{de3ad59e-c315-48c6-91d3-0ef57510221f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State\Move">
+      <UniqueIdentifier>{6a6f9caf-d899-4063-87ae-5ef7e845add7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State\Dead">
+      <UniqueIdentifier>{e3ef0ed1-3932-49a9-a007-3ab524838e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Gunner\State\Damaged">
+      <UniqueIdentifier>{2baf9000-feab-4cfb-b813-f5567c5448cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StageResultSystem">
+      <UniqueIdentifier>{14bf8f9a-f900-443f-8569-999fa02d6bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_Bonus">
+      <UniqueIdentifier>{c35854d4-f1b3-4a9b-bd47-3f47f725eb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageCorus">
+      <UniqueIdentifier>{3186525a-7269-4aaf-b794-9024f5af4930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_FinalScore">
+      <UniqueIdentifier>{40f16d0b-83aa-4f71-af3e-fb9a6be69663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Defines\Struct">
+      <UniqueIdentifier>{bf577d6b-1188-4dec-aedf-0e909f473675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Defines\Struct\EffectData">
+      <UniqueIdentifier>{e4d6da3e-82e0-4b61-9186-9aa2a3f59ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Defines\Struct\UnionEffectData">
+      <UniqueIdentifier>{a7d98e41-d83f-4370-8055-a49fe0c1bfc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo">
+      <UniqueIdentifier>{8403140a-1d49-47d2-8d9b-a4dfe91e2999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State">
+      <UniqueIdentifier>{2bb72ead-2864-4768-a62f-a0e5d44fa7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State\Idle">
+      <UniqueIdentifier>{5d4b1549-acb2-4e2d-90fe-2fd082a93f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State\Attack">
+      <UniqueIdentifier>{24809c9b-8f33-48c9-af67-ac02bff6f6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State\Move">
+      <UniqueIdentifier>{a9d0442c-621a-4048-b721-aeab4adb7322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State\Damaged">
+      <UniqueIdentifier>{6a0c5e2f-290b-4478-bd12-52042996e2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Baboo\State\Dead">
+      <UniqueIdentifier>{d389080d-c4d6-47d5-a424-482074ff6377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatJudge">
+      <UniqueIdentifier>{da03a2c2-2ef5-4d78-967c-12b7f48aed20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.Monsters\Samurai">
+      <UniqueIdentifier>{730258bc-f259-4273-b1b4-8cc11dc62e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Snap">
+      <UniqueIdentifier>{71380cde-03a1-4086-91fa-e8e35fddb829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Smoke">
+      <UniqueIdentifier>{087c41f4-e1db-4c14-8c89-f745f8839476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\ConvecLens">
+      <UniqueIdentifier>{9cf31846-95bd-4b93-8c56-5ca9712916cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerPartner">
+      <UniqueIdentifier>{39396aaf-2426-4915-9c59-21d9ebda3293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerGuiter">
+      <UniqueIdentifier>{929c2815-af71-4f2b-8274-e84f5ce37efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\StarSymbol">
+      <UniqueIdentifier>{4f856810-2922-4bf1-99c4-2c1c9bd39d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\MeshEffect\LandImpact">
+      <UniqueIdentifier>{6ef73ade-ff76-4b0b-8b7d-188753578c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Decal">
+      <UniqueIdentifier>{ef51d171-37cf-4c5f-9ccf-16fca3f5eeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Decal\Decal">
+      <UniqueIdentifier>{971a08ed-9779-4779-92ff-c4440a3c6057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem">
+      <UniqueIdentifier>{0910d36b-da2e-4d02-bd81-da660acc68f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store">
+      <UniqueIdentifier>{d9c40ee8-893d-4450-a87e-8edfe4bbfe7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreBar">
+      <UniqueIdentifier>{92e3aa2c-0deb-4369-bd2c-305656174620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreDesc">
+      <UniqueIdentifier>{437e85a4-119f-4eca-9267-f9f7537934ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreEntry">
+      <UniqueIdentifier>{4fb85349-2fa1-44a0-8784-75637d6ca0c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\MeshEffect\Barrier">
+      <UniqueIdentifier>{c572b7ba-8ef7-44e4-8656-ed7385980002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChip">
+      <UniqueIdentifier>{25ab7a00-5208-43b5-a969-1cce73b7dc7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreEquip">
+      <UniqueIdentifier>{7b588b95-4741-4bab-8476-8a703e177c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreAttack">
+      <UniqueIdentifier>{d823b98a-6300-4f1c-8593-0a85ed68cfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreSkill">
+      <UniqueIdentifier>{9a4bf1b7-a001-4d27-912e-6adcee73b648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreItem">
+      <UniqueIdentifier>{5bb2e265-3129-4fe9-aabb-4cf800e13b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChipEquip">
+      <UniqueIdentifier>{cd895a95-90c2-4210-a286-907cb76f9fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_UpRightBack">
+      <UniqueIdentifier>{97c3b0ec-193c-4aed-afe9-f1cba37b6e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map\Anim">
+      <UniqueIdentifier>{60291d9b-9cef-4b96-a8b9-ede31abe1946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map\Doors">
+      <UniqueIdentifier>{92c62205-5a1b-458f-b4b0-89932067f0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map\Doors\DoorParts">
+      <UniqueIdentifier>{edfa855e-d688-4a62-9f57-38c5d971e3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\11. Trigger\DoorTrigger">
+      <UniqueIdentifier>{1400660e-e52c-45a1-aa11-8f75c661d1f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\10.Map\Doors\ProdDeptDoor">
+      <UniqueIdentifier>{71faa5bc-fce8-4ef1-a223-6980ee083f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_TalkSystem">
+      <UniqueIdentifier>{6a39a8d5-05ec-4f32-ba33-dd63ba7eaa6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkCharacter">
+      <UniqueIdentifier>{831bcbbd-7594-4764-9b60-25dfafa17a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkWindow">
+      <UniqueIdentifier>{4739f85a-702e-404e-965b-f6066c284bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Zap">
+      <UniqueIdentifier>{2d127f71-6960-4823-8ed3-97f5e456b1f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Explosion">
+      <UniqueIdentifier>{45bc6be4-2ca4-438a-a4ce-0c98b7010db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Boom_Font">
+      <UniqueIdentifier>{3d408675-092a-4350-9518-e8ab8c2e73a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Harmonic_Beam">
+      <UniqueIdentifier>{312aa344-d6f4-476c-9519-4229d79e69bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\MeshEffect\Fire">
+      <UniqueIdentifier>{2f8e88ea-38f6-4b71-9f62-cf89d3a4bc3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\TextureEffect\Light">
+      <UniqueIdentifier>{12f1ff5a-85ed-4914-a262-4045a1cda9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Manager\EffectManager">
+      <UniqueIdentifier>{479d34bf-3d03-4dae-bb5b-736db0c95b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\12.Floor">
+      <UniqueIdentifier>{01aaebbd-2bab-4c6f-9b9b-ed8fd93cd871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\13.FreeObject">
+      <UniqueIdentifier>{30e528c9-cdf3-44a7-b9f0-b9d1c972c875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\14.CSG_Tester">
+      <UniqueIdentifier>{05579ac4-2e0f-4618-b2fd-058108ebf165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\15.Projectile">
+      <UniqueIdentifier>{0b917e16-5290-4fa6-ab40-a60a6ec96543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\16.PreBakedBrokenObj">
+      <UniqueIdentifier>{b0fb3bef-b61b-494c-8816-66686d172ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\17.Cuttable">
+      <UniqueIdentifier>{f48ac4ce-a548-4dbb-89df-3b8830acbb88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\18.CutPlane">
+      <UniqueIdentifier>{d59ea126-b6b0-4963-8f54-324ad6f6d978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\19.Woundable">
+      <UniqueIdentifier>{86400ab6-24bf-4401-85b7-f65347c8f7e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\20.StaticCutterTester">
+      <UniqueIdentifier>{e1c2edac-6260-47eb-be8a-5882cbc25cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\20.StaticCutterTester\Plane">
+      <UniqueIdentifier>{e71789eb-6a2a-4baf-8c95-8459cc8eb44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.Effect\ParticleEffect\MyParticle">
+      <UniqueIdentifier>{eda32013-a0fd-4aa0-948f-9bc4ab725843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\21.DynamicFracture">
+      <UniqueIdentifier>{9cb0067a-9a24-40b8-b1b2-83ca60403225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\22.Breakable">
+      <UniqueIdentifier>{19ab53f8-a8e0-4096-8a86-c38d9adb4561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\15.Projectile\PhysicalProjectile">
+      <UniqueIdentifier>{23977ef1-5225-4ee1-94f0-42294524a263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\15.Projectile\KineticProjectile">
+      <UniqueIdentifier>{7f12a51f-eaa5-4005-9860-fb5d96922e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\22.Breakable\DamageApplyer">
+      <UniqueIdentifier>{7b215966-a10f-4721-957b-e4f067f6cf21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\99.Camera\SentientGopro">
+      <UniqueIdentifier>{c68f96e2-5e03-4b81-8254-cb572fa7373b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\23.GeometryBrush">
+      <UniqueIdentifier>{3bd4b6a7-a7ab-4ddd-8820-688b671db5d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MainApp.h">
+      <Filter>01.Levels\99.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Defines.h">
+      <Filter>99.Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Option.h">
+      <Filter>99.Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Logo.h">
+      <Filter>01.Levels\03.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loader.h">
+      <Filter>01.Levels\02.Loading\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Loading.h">
+      <Filter>01.Levels\02.Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BackGround.h">
+      <Filter>02.GameObject\00.BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Test.h">
+      <Filter>01.Levels\05.TestRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Camera.h">
+      <Filter>02.GameObject\99.Camera\ToolCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ResourceWizard.h" />
+    <ClInclude Include="..\Public\SkyBox.h">
+      <Filter>02.GameObject\01.SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GameManager.h">
+      <Filter>97.Manager\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PlayerManager.h">
+      <Filter>97.Manager\PlayerManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi.h">
+      <Filter>02.GameObject\09.CUi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_2D.h">
+      <Filter>02.GameObject\09.CUi\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_Default.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Load_Include.h">
+      <Filter>99.Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TestModel.h">
+      <Filter>02.GameObject\02.TestModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Imgui_Manager.h">
+      <Filter>97.Manager\ImguiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TestEffect.h">
+      <Filter>02.GameObject\03.Effect\00.TestEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_Mgr.h">
+      <Filter>97.Manager\CUi_Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_AnimTool.h">
+      <Filter>01.Levels\98.AnimTool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Vergil.h">
+      <Filter>02.GameObject\03.Player\00. Vergil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MapObject_Static.h">
+      <Filter>02.GameObject\10.Map\Static</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Free_SK_Object.h" />
+    <ClInclude Include="..\Public\Player_Camera.h">
+      <Filter>02.GameObject\99.Camera\PlayerCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MapObject_Static.h">
+      <Filter>02.GameObject\10.Map\Static</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Trigger.h">
+      <Filter>02.GameObject\11. Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Effect.h">
+      <Filter>01.Levels\96.EffectTool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Base.h">
+      <Filter>02.GameObject\03.Effect\Prototype\EffectBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Union.h">
+      <Filter>02.GameObject\03.Effect\Prototype\EffectUnion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_MapTool.h" />
+    <ClInclude Include="..\Public\Texture_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Beat_Manager.h">
+      <Filter>95.Beat_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_MapTool.h">
+      <Filter>01.Levels\97.MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Chai.h">
+      <Filter>02.GameObject\03.Player\01. Chai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Monster_Saber.h">
+      <Filter>02.GameObject\05.Monsters\Saber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState_Attack.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState_Idle.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Idle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState_Move.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GridBox.h">
+      <Filter>01.Levels\05.TestRoom\GridBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BigSlash_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\SlashBig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EnemySlash_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\EnemySlash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_BeatMarker.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatMarker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_BeatMarkerSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_ComboWordHits.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboWordHits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_ComboNum.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboNum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_RankSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_ScoreSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_ScoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_LoadingCat.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingCat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_LoadingNote.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingNote</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Flare_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Flare</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Basic_Guitar.h">
+      <Filter>02.GameObject\03.Player\01. Chai\Guitar\Basic_Guitar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Impact_Ring_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Ring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Impact_Shock_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Shock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Impact_Spark_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Spark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Saber_Weapon.h">
+      <Filter>02.GameObject\05.Monsters\Saber\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState_Damaged.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Damaged</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_PlayerBar.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_PlayerHP.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerHP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_PlayerReverb.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerReverb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Particle_Effect.h">
+      <Filter>02.GameObject\03.Effect\ParticleEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SaberState_Dead.h">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Dead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_FinalResultSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_FinalResultSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_FinalResult.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_FinalResultSystem\CUi_FinalResult</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Beam_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Beam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CombatManager.h">
+      <Filter>97.Manager\CombatManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Monster_Gunner.h">
+      <Filter>02.GameObject\05.Monsters\Gunner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState_Idle.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Idle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState_Attack.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState_Damaged.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Damaged</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState_Move.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunnerState_Dead.h">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Dead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StageResultSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StageCorus.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageCorus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StageResult_Bonus.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StageResult_FinalScore.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_FinalScore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectData.h">
+      <Filter>99.Defines\Struct\EffectData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UnionEffectData.h">
+      <Filter>99.Defines\Struct\UnionEffectData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Monster_Baboo.h">
+      <Filter>02.GameObject\05.Monsters\Baboo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState_Idle.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Idle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState_Attack.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState_Move.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState_Damaged.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Damaged</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabooState_Dead.h">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Dead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_BeatJudge.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatJudge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Monster_Samurai.h">
+      <Filter>02.GameObject\05.Monsters\Samurai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Snap_Impact_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Snap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Snap_Font_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Snap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Smoke_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ConvexLens_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\ConvecLens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_PlayerGuiter.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerGuiter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_PlayerPartner.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerPartner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StarSymbol_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\StarSymbol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LandImpact_Effect.h">
+      <Filter>02.GameObject\03.Effect\MeshEffect\LandImpact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Decal_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Decal\Decal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_Store.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreBar.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreDesc.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreEntry.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Barrier.h">
+      <Filter>02.GameObject\03.Effect\MeshEffect\Barrier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_UpRightBack.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_UpRightBack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreItemEquip.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreEquip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreChip.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreItem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreSkill.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreChipEquip.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChipEquip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_StoreAttack.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MapObject_Anim.h">
+      <Filter>02.GameObject\10.Map\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ProdDeptDoor.h">
+      <Filter>02.GameObject\10.Map\Doors\ProdDeptDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PartDoor.h">
+      <Filter>02.GameObject\10.Map\Doors\DoorParts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PartDoorFrame.h">
+      <Filter>02.GameObject\10.Map\Doors\DoorParts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_TalkSystem.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_TalkCharacter.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CUi_TalkWindow.h">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Zap_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Zap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Explosion_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Explosion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MonsterBase.h">
+      <Filter>02.GameObject\05.Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Boom_Font_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Boom_Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Harmonic_Beam.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Harmonic_Beam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Fire_Effect.h">
+      <Filter>02.GameObject\03.Effect\MeshEffect\Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Light_Effect.h">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Manager.h">
+      <Filter>97.Manager\EffectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Floor.h">
+      <Filter>02.GameObject\12.Floor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FreeDynamicObject.h">
+      <Filter>02.GameObject\13.FreeObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CSG_Tester.h">
+      <Filter>02.GameObject\14.CSG_Tester</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PreBakedBrokenObj.h">
+      <Filter>02.GameObject\16.PreBakedBrokenObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Cuttable.h">
+      <Filter>02.GameObject\17.Cuttable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Cut_Plane.h">
+      <Filter>02.GameObject\18.CutPlane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Woundable.h">
+      <Filter>02.GameObject\19.Woundable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StaticCutTester.h">
+      <Filter>02.GameObject\20.StaticCutterTester</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StaticCutPlane.h">
+      <Filter>02.GameObject\20.StaticCutterTester\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MyParticle.h">
+      <Filter>02.GameObject\03.Effect\ParticleEffect\MyParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DynamicFracture.h">
+      <Filter>02.GameObject\21.DynamicFracture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Breakable.h">
+      <Filter>02.GameObject\22.Breakable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Projectile.h">
+      <Filter>02.GameObject\15.Projectile\KineticProjectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PxProjectile.h">
+      <Filter>02.GameObject\15.Projectile\PhysicalProjectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DamageApplier.h">
+      <Filter>02.GameObject\22.Breakable\DamageApplyer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SentientGopro.h">
+      <Filter>02.GameObject\99.Camera\SentientGopro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GeometryBrush.h">
+      <Filter>02.GameObject\23.GeometryBrush</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+    <Image Include="Client.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>98.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MainApp.cpp">
+      <Filter>01.Levels\99.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Logo.cpp">
+      <Filter>01.Levels\03.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loader.cpp">
+      <Filter>01.Levels\02.Loading\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Loading.cpp">
+      <Filter>01.Levels\02.Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BackGround.cpp">
+      <Filter>02.GameObject\00.BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Test.cpp">
+      <Filter>01.Levels\05.TestRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Camera.cpp">
+      <Filter>02.GameObject\99.Camera\ToolCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ResourceWizard.cpp" />
+    <ClCompile Include="..\Private\SkyBox.cpp">
+      <Filter>02.GameObject\01.SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GameManager.cpp">
+      <Filter>97.Manager\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PlayerManager.cpp">
+      <Filter>97.Manager\PlayerManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi.cpp">
+      <Filter>02.GameObject\09.CUi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_Default.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TestModel.cpp">
+      <Filter>02.GameObject\02.TestModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Imgui_Manager.cpp">
+      <Filter>97.Manager\ImguiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_AnimTool.cpp">
+      <Filter>01.Levels\98.AnimTool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Vergil.cpp">
+      <Filter>02.GameObject\03.Player\00. Vergil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MapObject_Static.cpp">
+      <Filter>02.GameObject\10.Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TestEffect.cpp">
+      <Filter>02.GameObject\03.Effect\00.TestEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Base.cpp">
+      <Filter>02.GameObject\03.Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_MapTool.cpp">
+      <Filter>01.Levels\97.MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MapObject_Static.cpp">
+      <Filter>02.GameObject\10.Map\Static</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Effect.cpp">
+      <Filter>01.Levels\96.EffectTool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Base.cpp">
+      <Filter>02.GameObject\03.Effect\Prototype\EffectBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Union.cpp">
+      <Filter>02.GameObject\03.Effect\Prototype\EffectUnion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Free_SK_Object.cpp" />
+    <ClCompile Include="..\Private\Player_Camera.cpp">
+      <Filter>02.GameObject\99.Camera\PlayerCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Trigger.cpp">
+      <Filter>02.GameObject\11. Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Texture_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Chai.cpp">
+      <Filter>02.GameObject\03.Player\01. Chai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GridBox.cpp">
+      <Filter>01.Levels\05.TestRoom\GridBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Monster_Saber.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState_Attack.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState_Idle.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Idle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState_Move.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BigSlash_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\SlashBig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EnemySlash_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\EnemySlash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_BeatMarker.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatMarker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_BeatMarkerSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_ComboWordHits.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboWordHits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_ComboNum.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem\CUi_ComboNum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_RankSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_RankSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_ScoreSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_ScoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_2D.cpp">
+      <Filter>02.GameObject\09.CUi\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Beat_Manager.cpp">
+      <Filter>95.Beat_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_Mgr.cpp">
+      <Filter>97.Manager\CUi_Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_LoadingCat.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingCat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_LoadingNote.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_Loading\CUi_LoadingNote</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Flare_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Flare</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Basic_Guitar.cpp">
+      <Filter>02.GameObject\03.Player\01. Chai\Guitar\Basic_Guitar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Impact_Ring_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Ring</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Impact_Shock_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Shock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Impact_Spark_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Impact\Spark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Saber_Weapon.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState_Damaged.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Damaged</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_PlayerBar.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_PlayerHP.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerHP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_PlayerReverb.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerReverb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Particle_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\ParticleEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SaberState_Dead.cpp">
+      <Filter>02.GameObject\05.Monsters\Saber\State\Dead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_FinalResult.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_FinalResultSystem\CUi_FinalResult</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_FinalResultSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_FinalResultSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Beam_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Beam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CombatManager.cpp">
+      <Filter>97.Manager\CombatManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Monster_Gunner.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState_Idle.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Idle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState_Attack.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState_Damaged.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Damaged</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState_Move.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunnerState_Dead.cpp">
+      <Filter>02.GameObject\05.Monsters\Gunner\State\Dead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StageResultSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StageCorus.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageCorus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StageResult_Bonus.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StageResult_FinalScore.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StageResultSystem\CUi_StageResult_FinalScore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EffectData.cpp">
+      <Filter>99.Defines\Struct\EffectData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UnionEffectData.cpp">
+      <Filter>99.Defines\Struct\UnionEffectData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Monster_Baboo.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState_Idle.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Idle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState_Attack.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState_Move.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState_Damaged.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Damaged</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabooState_Dead.cpp">
+      <Filter>02.GameObject\05.Monsters\Baboo\State\Dead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_BeatJudge.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_BeatMarkerSystem\CUi_BeatJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Monster_Samurai.cpp">
+      <Filter>02.GameObject\05.Monsters\Samurai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Snap_Font_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Snap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Snap_Impact_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Snap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Smoke_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ConvexLens_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\ConvecLens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_PlayerGuiter.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerGuiter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_PlayerPartner.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_PlayerBar\CUi_PlayerPartner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\StarSymbol_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\StarSymbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LandImpact_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\MeshEffect\LandImpact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Decal_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Decal\Decal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_Store.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreBar.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreDesc.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreEntry.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_StoreEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Barrier.cpp">
+      <Filter>02.GameObject\03.Effect\MeshEffect\Barrier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_UpRightBack.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_UpRightBack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreItemEquip.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreEquip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreAttack.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreItem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreChipEquip.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChipEquip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreSkill.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_StoreChip.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_StoreSystem\CUi_Store\CUi_StoreChip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MapObject_Anim.cpp">
+      <Filter>02.GameObject\10.Map\Anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ProdDeptDoor.cpp">
+      <Filter>02.GameObject\10.Map\Doors\ProdDeptDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PartDoor.cpp">
+      <Filter>02.GameObject\10.Map\Doors\DoorParts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PartDoorFrame.cpp">
+      <Filter>02.GameObject\10.Map\Doors\DoorParts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_TalkSystem.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_TalkCharacter.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CUi_TalkWindow.cpp">
+      <Filter>02.GameObject\09.CUi\2D\CUi_TalkSystem\CUi_TalkWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Zap_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Zap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Explosion_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Explosion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MonsterBase.cpp">
+      <Filter>02.GameObject\05.Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Boom_Font_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Boom_Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Harmonic_Beam.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Harmonic_Beam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Fire_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\MeshEffect\Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Light_Effect.cpp">
+      <Filter>02.GameObject\03.Effect\TextureEffect\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Manager.cpp">
+      <Filter>97.Manager\EffectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Floor.cpp">
+      <Filter>02.GameObject\12.Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FreeDynamicObject.cpp">
+      <Filter>02.GameObject\13.FreeObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CSG_Tester.cpp">
+      <Filter>02.GameObject\14.CSG_Tester</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PreBakedBrokenObj.cpp">
+      <Filter>02.GameObject\16.PreBakedBrokenObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Cuttable.cpp">
+      <Filter>02.GameObject\17.Cuttable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Cut_Plane.cpp">
+      <Filter>02.GameObject\18.CutPlane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Woundable.cpp">
+      <Filter>02.GameObject\19.Woundable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\StaticCutTester.cpp">
+      <Filter>02.GameObject\20.StaticCutterTester</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\StaticCutPlane.cpp">
+      <Filter>02.GameObject\20.StaticCutterTester\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MyParticle.cpp">
+      <Filter>02.GameObject\03.Effect\ParticleEffect\MyParticle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DynamicFracture.cpp">
+      <Filter>02.GameObject\21.DynamicFracture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Breakable.cpp">
+      <Filter>02.GameObject\22.Breakable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Projectile.cpp">
+      <Filter>02.GameObject\15.Projectile\KineticProjectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PxProjectile.cpp">
+      <Filter>02.GameObject\15.Projectile\PhysicalProjectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DamageApplier.cpp">
+      <Filter>02.GameObject\22.Breakable\DamageApplyer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SentientGopro.cpp">
+      <Filter>02.GameObject\99.Camera\SentientGopro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GeometryBrush.cpp">
+      <Filter>02.GameObject\23.GeometryBrush</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>98.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxNorTex.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPointInstance.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxRectInstance.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxCube.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxEffect.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxEffectPosTex.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl">
+      <Filter>96.Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
