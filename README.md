@@ -12,6 +12,11 @@
    - 입자 개수에 대해 O(n^2)인 알고리즘이나, 공간을 그리드로 분할해 가까운 입자를 우선 탐색하고, 조건에 부합하지 않는 입자를 빠르게 연산 대상에서 제외하는 것으로 O(n)에 가깝게 최적화   
 
 ### Mesh Boolean   
+   <img src="https://github.com/sturdyChair/asset/blob/main/Intersect.PNG" width="600" height="400"/>   
+
+   - 두 메쉬 간의 교집합, 차집합, 합집합 메쉬를 계산하는 기능을 구현   
+   - 보로노이 테셀레이션으로 분할한 입방체 공간과 다양한 모양의 메쉬를 교차 연산, non convex 메쉬 분할할 수 있음
+   - 메쉬를 구성하는 면에 대해 다른 면들이 정면에 있는지 후면에 있는지를 기준으로 나눈 BSP 트리를 이용해 기능을 구현/최적화 함
 
 ### Keyframe Simulation   
    <img src="https://github.com/sturdyChair/asset/blob/main/dynamic_destroy-ezgif.com-video-to-gif-converter.gif" width="600" height="400"/>   
