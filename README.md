@@ -5,12 +5,20 @@
 
 ### Voronoi Tesselation   
    <img src="https://github.com/sturdyChair/asset/blob/main/Cube%20Fracturing.PNG" width="600" height="400"/>   
+   
    - 정육면체 공간을 비정형적 모양으로 분할하기 위해 구현   
    - 공간 상에 존재하는 입자들로부터 가장 가까운 점들의 집합으로 정육면체 분할   
    - 각 입자 쌍 사이의 선분과 수직이고, 중앙을 관통하는 평면을 이용해 공간을 분할하는 식으로 구현   
    - 입자 개수에 대해 O(n^2)인 알고리즘이나, 공간을 그리드로 분할해 가까운 입자를 우선 탐색하고, 조건에 부합하지 않는 입자를 빠르게 연산 대상에서 제외하는 것으로 O(n)에 가깝게 최적화   
 
+### Mesh Boolean   
+
 ### Keyframe Simulation   
+   <img src="https://github.com/sturdyChair/asset/blob/main/dynamic_destroy-ezgif.com-video-to-gif-converter.gif" width="600" height="400"/>   
+   <img src="https://github.com/sturdyChair/asset/blob/main/Simul_destroy-ezgif.com-video-to-gif-converter.gif" width="600" height="400"/>   
+
+   - 조각난 메쉬를 nvidia physx 엔진에 연동, 시뮬레이트 결과를 키프레임 애니메이션으로 저장   
+   - 이후 물리 엔진 없이 공격 방향에 따라 파괴되는 애니메이션을 재생   
 
 ### Destruction System   
    <img src="https://github.com/sturdyChair/asset/blob/main/516/BreakBetter%20-%20Trim_1.gif" width="600" height="400"/>   
