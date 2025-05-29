@@ -37,7 +37,27 @@
 ## Skinned Mesh   
 
 ### Dynamic Slice   
+  <img src="https://github.com/sturdyChair/asset/blob/main/cut_0.gif" width="600" height="400"/>   
+
+  - 메쉬의 정점이 평면의 법선 방향에 있는지, 아닌지를 기준으로 나누어 새로운 정점 버퍼를 생성   
+  - DX 11의 Compute Shader를 이용해 GPU 가속   
+  - 절단 이후 래그돌 적용, 절단된 조각 또한 다시 절단 가능   
+
+  <img src="https://github.com/sturdyChair/asset/blob/main/430/static_slice.gif" width="600" height="400"/>   
+
+   - 절단 타이밍에 스킨드 메쉬의 상태를 스태틱 메쉬로 변환 후 절단   
+   - 절단 후 새로 생긴 절단면 정점을 기준으로 파티클 생성   
 
 ### Voronoi + Mesh Swap   
+   <img src="https://github.com/sturdyChair/asset/blob/main/516/SkinnedFracture%20-%20Trim.gif" width="600" height="400"/>   
+
+   - 스키닝 이전의 메쉬를 사전 분할    
+   - 피격시 사전 분할된 조각을 가장 가까운 Bone 위치에 스폰   
 
 ### Mesh Clip
+   <img src="https://github.com/sturdyChair/asset/blob/main/516/wound%20-%20Trim.gif" width="600" height="400"/>   
+
+   - 메쉬의 일부분을 타원체 모양으로 클리핑
+   - 스키닝 이전의 정점을 타원체의 로컬 기저로 변환, 원점으로부터 거리가 1 이하면 해당 정점을 그리지 않도록 함
+   - 캐릭터 메쉬의 뒷면을 스텐실에 기록, 이후 타원체의 뒷면을 스텐실에 기록된 부분에만 그려 절단면을 표현
+   
