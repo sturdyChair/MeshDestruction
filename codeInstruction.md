@@ -10,11 +10,9 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 	auto node = make_unique<BSP_Node>();
 	const auto& BaseTriangle = triangles[rand() % triangles.size()];
 	const auto& v0 = mesh.vertices[BaseTriangle.x], v1 = mesh.vertices[BaseTriangle.y], v2 = mesh.vertices[BaseTriangle.z];
-	node->center = center;
 	CSG_Plane plane{ v0,v1,v2 };
-	node->splitter = plane;
+	node->Initialize(center, plane, BaseTriangle);
 	vector<_uint3> frontTris, backTris;
-	node->coplanar.push_back(BaseTriangle);
 	for (const auto& tri : triangles){
 		if (tri.x == BaseTriangle.x && tri.y == BaseTriangle.y && tri.z == BaseTriangle.z){
 			continue;
