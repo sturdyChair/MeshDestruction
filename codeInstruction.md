@@ -44,3 +44,6 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 }
 
 ```
+메쉬 불리언 연산을 위해 메쉬를 바탕으로 BSP 트리 생성   
+<img src="https://www.researchgate.net/profile/Ana-Maria-Cretu-3/publication/239744009/figure/fig6/AS:298710425718796@1448229523512/A-model-and-the-steps-in-the-BSP-tree-construction.png" width="800" height="400"/>    
+
