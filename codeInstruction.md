@@ -2,6 +2,36 @@
 
 ## CSG - Mesh Boolean
 
+```mermaid
+메쉬 불리언 연산을 위해 메쉬를 바탕으로 BSP 트리 생성   
+
+```mermaid
+---
+title: BSP노드 계층구조
+---
+graph TD
+    A[BSP_Node] --> B{{SplliterPlane}}
+    B -->|Front| C[BSP_Node]
+    B -->|Back| D[BSP_Node]
+    C[BSP_Node] --> E{{SplliterPlane}}
+    E -->|Front| F[BSP_Node]
+    E -->|Back| G[BSP_Node]
+```
+
+```mermaid
+---
+title: BSP노드 - CSG메쉬 관계
+---
+graph LR
+    A[BSP_Node] -->B{IndexBuffer}
+    B--> C(CSG_Mesh)
+    D[BSP_Node]-->E{IndexBuffer}
+    E--> C
+    F[BSP_Node]-->G{IndexBuffer}
+    G--> C
+```
+
+
 ```CSG_Manager.cpp
 
 unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_uint3>& triangles, const _float3& center)
@@ -44,6 +74,3 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 }
 
 ```
-메쉬 불리언 연산을 위해 메쉬를 바탕으로 BSP 트리 생성   
-<img src="https://www.researchgate.net/profile/Ana-Maria-Cretu-3/publication/239744009/figure/fig6/AS:298710425718796@1448229523512/A-model-and-the-steps-in-the-BSP-tree-construction.png" width="800" height="400"/>    
-
