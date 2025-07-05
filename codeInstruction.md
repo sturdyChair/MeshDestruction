@@ -2,7 +2,7 @@
 
 ## CSG - Mesh Boolean
 
-메쉬 불리언 연산을 위해 메쉬를 바탕으로 BSP 트리 생성   
+### BSP Tree 
 
 ```mermaid
 ---
@@ -77,3 +77,23 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 
 ```
 >BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+
+```CSG_Union
+void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& nodeB)
+{
+	//Clip the meshes against each other			//   _______
+	ClipTo(nodeA, nodeB);					//  |   A   |__
+	ClipTo(nodeB, nodeA);					//  |____   B  |
+	// Invert the second mesh				//       |_____|
+	InvertBSPTree(nodeB);					//
+	// Clip the inverted mesh against the first one		//
+	ClipTo(nodeB, nodeA);					//
+	// Revert the second mesh				//
+	InvertBSPTree(nodeB);					//
+
+	return;
+}
+```
+>Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+>현제 Union, Intersect, Difference 연산을 지원
+
