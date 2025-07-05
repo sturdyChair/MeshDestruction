@@ -2,7 +2,6 @@
 
 ## CSG - Mesh Boolean
 
-```mermaid
 메쉬 불리언 연산을 위해 메쉬를 바탕으로 BSP 트리 생성   
 
 ```mermaid
