@@ -16,7 +16,9 @@ graph TD
     E -->|Front| F[BSP_Node]
     E -->|Back| G[BSP_Node]
 ```
-Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
+>CSG_Mesh : 정점, 노말, UV등 Mesh에 필요한 모든 정보를 담는 구조체([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))
+>BSP_Node : CSG_Mesh를 통해 구성된 BSP Tree의 Node를 표현([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))
+>Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
 
 ```mermaid
 ---
@@ -30,7 +32,7 @@ graph LR
     F[BSP_Node]-->G{IndexBuffer}
     G--> C
 ```
-각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함
+>각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함
 
 ```CSG_Manager.cpp
 
@@ -74,3 +76,4 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 }
 
 ```
+>BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))
