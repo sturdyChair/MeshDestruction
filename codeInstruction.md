@@ -9,13 +9,14 @@
 title: BSP노드 계층구조
 ---
 graph TD
-    A[BSP_Node] --> B{{SplliterPlane}}
+    A[BSP_Node] --> B{{SplitterPlane}}
     B -->|Front| C[BSP_Node]
     B -->|Back| D[BSP_Node]
-    C[BSP_Node] --> E{{SplliterPlane}}
+    C[BSP_Node] --> E{{SplitterPlane}}
     E -->|Front| F[BSP_Node]
     E -->|Back| G[BSP_Node]
 ```
+Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
 
 ```mermaid
 ---
@@ -29,7 +30,7 @@ graph LR
     F[BSP_Node]-->G{IndexBuffer}
     G--> C
 ```
-
+각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함
 
 ```CSG_Manager.cpp
 
