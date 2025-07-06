@@ -97,3 +97,111 @@ void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& 
 >Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
 >현제 Union, Intersect, Difference 연산을 지원
 
+
+## Skinned Mesh Cutter
+
+모든 face에 대한 절단 함수 ([MGRR_Cutter.hlsl](https://github.com/sturdyChair/MeshDestruction/blob/master/ShaderFiles/MGRR_Cutter.hlsl))
+```MGRR_Cutter.hlsl - main
+[numthreads(64, 1, 1)]
+void main(uint3 DTid : SV_DispatchThreadID)
+{
+    uint index = DTid.x, iNumVert, iStride;
+    inputVerts.GetDimensions(iNumVert, iStride);
+    uint3 tri = indices[index].xyz;
+    uint tris[3]; tris[0] = tri.x; tris[1] = tri.y; tris[2] = tri.z;
+    Vertex v[3] = { inputVerts[tri.x], inputVerts[tri.y], inputVerts[tri.z] };
+    float3 pos[3], norm[3], tang[3];
+    float2 uv[3];
+    float d[3] ={ 0.f, 0.f, 0.f };
+    float4 skinnedPlane[3];
+    for (int i = 0; i < 3; ++i){
+        float4x4 skinningMatrix = 0;
+        float accw = 0.f;
+        [unroll]
+        for (int j = 0; j < 3; ++j){
+            float4x4 bone = Matrices[v[i].blendIndices[j]];
+            float w = v[i].blendWeights[j];
+            accw += w;
+            skinningMatrix += bone * w;
+        }
+        skinningMatrix += Matrices[v[i].blendIndices[3]] * (1.f - accw);
+        d[i] = dot(planeNormal, mul(skinningMatrix, float4(v[i].pos, 1.f)).xyz) + planeD;
+        pos[i] = v[i].pos; norm[i] = v[i].normal; tang[i] = v[i].tangent; uv[i] = v[i].uv;
+    }
+```
+> input vertex에 대한 스키닝 적용   
+```
+    bool side[3], nside[3];
+    side[0] = d[0] >= planaEps; side[1] = d[1] >= planaEps; side[2] = d[2] >= planaEps;          // d가 양수라면, 절단면의 법선 방향
+    nside[0] = d[0] <= -planaEps; nside[1] = d[1] <= -planaEps; nside[2] = d[2] <= -planaEps;    // d가 음수라면, 절단면의 법선 반대 방향
+    bool coplanar[3];
+    for (int j = 0; j < 3; ++j){
+        coplanar[j] = !side[j] && !nside[j];							 // 양쪽 다 해당하지 않으면 평면 상에 존재
+    }
+```
+> skinned vertex의, 절단면에 대한 상대적 위치 판정
+```
+    uint up[4], down[4], ucount = 0, dcount = 0;
+    for (int k = 0; k < 3; ++k){
+        if (side[k]){
+            up[ucount] = tris[k];
+            ++ucount;
+            uint nextIdx = (k + 1) % 3; // 현재 정점(k)과 다음 정점(nextIdx)에 대해
+            if (nside[nextIdx]){        // 두 정점이 절단면 기준으로 서로 다른 공간에 위치한다면
+		MakeNewVertex(k, nextIdx, ucount, dcount, d, up, down): // 새 정점을 만들고
+ 		++ucount; ++dcount;	// 위, 아래 모두 정점 추가
+            }
+        }
+        if(nside[k]){ // 반대 방향에 대해서도 마찬가지로 실행
+            down[dcount] = tris[k];
+            ++dcount;
+            uint nextIdx = (k + 1) % 3;
+            if (side[nextIdx]){
+		MakeNewVertex(k, nextIdx, ucount, dcount, d, down, up):
+                ++dcount; ++ucount;
+            }
+        }
+        if (coplanar[k]){ // 평면 상에 있다면 위, 아래 모두 정점 추가
+            up[ucount] = tris[k]; ++ucount;
+            down[dcount] = tris[k]; ++dcount;
+        }
+    }
+```
+> 절단에 의한 정점 생성과 분류
+```
+    if (ucount == 3){ // 추가된 정점이 3개라면 3개의 정점으로 triangle 구성
+        outputVertsUp.Append(uint3(up[0], up[1], up[2]));
+    }
+    else if(ucount == 4){ // 4개라면 두개의 triangle 구성
+        outputVertsUp.Append(uint3(up[0], up[1], up[2]));
+        outputVertsUp.Append(uint3(up[0], up[2], up[3]));
+    }
+    if (dcount == 3){ // 추가된 정점이 3개라면 3개의 정점으로 triangle 구성
+        outputVertsDown.Append(uint3(down[0], down[1], down[2]));
+    }
+    else if (dcount == 4){// 4개라면 두개의 triangle 구성
+        outputVertsDown.Append(uint3(down[0], down[1], down[2]));
+        outputVertsDown.Append(uint3(down[0], down[2], down[3]));
+    }
+    return;
+}
+```
+> 새로운 정점들 reindexing, 삼각형 생성
+```Make New Vertex
+	void MakeNewVertex(int k, int nextIdx, float d[], uint up[], uint down[]){
+                Vertex newVert;
+                float t = saturate(d[k] / (d[k] - d[nextIdx])); // 두 정점과 평면 사이의 거리를 기준으로 보간 비율 계산	
+                newVert = LerpVertex(v[k], v[nextIdx], t);	// 정점 보간						
+                newVert.blendIndices = v[k].blendIndices;	// skinning을 위한 bone weight 설정			
+                newVert.blendWeights = v[k].blendWeights;
+                uint i0 = outputNewVertex.IncrementCounter();	// 정점 추가
+                outputNewVertex[i0] = newVert;
+                newVert.blendIndices = v[nextIdx].blendIndices; // bone weight 재설정
+                newVert.blendWeights = v[nextIdx].blendWeights;
+                uint i1 = outputNewVertex.IncrementCounter();   // 정점 추가
+                outputNewVertex[i1] = newVert;
+                up[ucount] = iNumVert + i0;
+                down[dcount] = iNumVert + i1;
+	}
+```
+> 새로운 정점 생성 루틴
