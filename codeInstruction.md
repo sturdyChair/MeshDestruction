@@ -1,6 +1,9 @@
 # 코드 설명서
 
-## CSG - Mesh Boolean
+1. [CSG - Mesh Boolean](#1.-CSG--Mesh-Boolean)
+2. [Skinned Mesh Cutter](#2.-Skinned-Mesh-Cutter)
+
+## 1. CSG - Mesh Boolean
    <img src="https://github.com/sturdyChair/asset/blob/main/Intersect.PNG" width="600" height="400"/>   
 
    - 두 메쉬 간의 교집합, 차집합, 합집합 메쉬를 계산하는 기능을 구현   
@@ -109,7 +112,7 @@ void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& 
 - 현재 Union, Intersect, Difference 연산을 지원
 
 
-## Skinned Mesh Cutter
+## 2. Skinned Mesh Cutter
 
 모든 face에 대한 절단 함수 ([MGRR_Cutter.hlsl](https://github.com/sturdyChair/MeshDestruction/blob/master/ShaderFiles/MGRR_Cutter.hlsl))
 ```MGRR_Cutter.hlsl - main
