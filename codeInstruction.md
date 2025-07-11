@@ -1,6 +1,6 @@
 # 코드 설명서
 
-1. [CSG - Mesh Boolean](#1-csg--mesh-boolean)
+1. [CSG - Mesh Boolean](#1-csg---mesh-boolean)
 2. [Skinned Mesh Cutter](#2-skinned-mesh-cutter)
 
 ## 1. CSG - Mesh Boolean
