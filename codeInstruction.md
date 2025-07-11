@@ -1,8 +1,19 @@
 # 코드 설명서
 
 ## CSG - Mesh Boolean
+   <img src="https://github.com/sturdyChair/asset/blob/main/Intersect.PNG" width="600" height="400"/>   
+
+   - 두 메쉬 간의 교집합, 차집합, 합집합 메쉬를 계산하는 기능을 구현   
+   - 보로노이 테셀레이션으로 분할한 입방체 공간과 다양한 모양의 메쉬를 교차 연산, non convex 메쉬 분할할 수 있음
+   - 메쉬를 구성하는 면에 대해 다른 면들이 정면에 있는지 후면에 있는지를 기준으로 나눈 BSP 트리를 이용해 기능을 구현/최적화 함
+
+
 
 ### BSP Tree 
+-Mesh Boolean을 구현하기 위한 핵심 기술로, 특정 메쉬의 모든 평면에 대한 특정 정점의 상대적 위치를 빠르게 계산하기 위해 이진트리 형태의 자료구조를 선택   
+-Mesh의 Facet을 기준으로 Mesh를 이진 트리로 나누어 Facet에 대해 정면/후면 판정을 최적화    
+-Torus형태의 non convex하고 복잡한 메쉬에 대해 빠르게 Mesh Boolean을 수행하는 성과를 얻음
+
 
 ```mermaid
 ---
@@ -16,9 +27,9 @@ graph TD
     E -->|Front| F[BSP_Node]
     E -->|Back| G[BSP_Node]
 ```
->CSG_Mesh : 정점, 노말, UV등 Mesh에 필요한 모든 정보를 담는 구조체([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
->BSP_Node : CSG_Mesh를 통해 구성된 BSP Tree의 Node를 표현([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
->Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
+-CSG_Mesh : 정점, 노말, UV등 Mesh에 필요한 모든 정보를 담는 구조체([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
+-BSP_Node : CSG_Mesh를 통해 구성된 BSP Tree의 Node를 표현([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
+-Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
 
 ```mermaid
 ---
@@ -32,7 +43,7 @@ graph LR
     F[BSP_Node]-->G{IndexBuffer}
     G--> C
 ```
->각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함   
+-각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함   
 
 ```CSG_Manager.cpp
 
@@ -76,7 +87,7 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 }
 
 ```
->BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+-BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
 
 ```CSG_Union
 void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& nodeB)
@@ -94,8 +105,8 @@ void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& 
 	return;
 }
 ```
->Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
->현제 Union, Intersect, Difference 연산을 지원
+-Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+-현제 Union, Intersect, Difference 연산을 지원
 
 
 ## Skinned Mesh Cutter
@@ -129,7 +140,7 @@ void main(uint3 DTid : SV_DispatchThreadID)
         pos[i] = v[i].pos; norm[i] = v[i].normal; tang[i] = v[i].tangent; uv[i] = v[i].uv;
     }
 ```
-> input vertex에 대한 스키닝 적용   
+- input vertex에 대한 스키닝 적용   
 ```
     bool side[3], nside[3];
     side[0] = d[0] >= planaEps; side[1] = d[1] >= planaEps; side[2] = d[2] >= planaEps;          // d가 양수라면, 절단면의 법선 방향
@@ -139,7 +150,7 @@ void main(uint3 DTid : SV_DispatchThreadID)
         coplanar[j] = !side[j] && !nside[j];							 // 양쪽 다 해당하지 않으면 평면 상에 존재
     }
 ```
-> skinned vertex의, 절단면에 대한 상대적 위치 판정
+- skinned vertex의, 절단면에 대한 상대적 위치 판정
 ```
     uint up[4], down[4], ucount = 0, dcount = 0;
     for (int k = 0; k < 3; ++k){
@@ -167,7 +178,7 @@ void main(uint3 DTid : SV_DispatchThreadID)
         }
     }
 ```
-> 절단에 의한 정점 생성과 분류
+- 절단에 의한 정점 생성과 분류
 ```
     if (ucount == 3){ // 추가된 정점이 3개라면 3개의 정점으로 triangle 구성
         outputVertsUp.Append(uint3(up[0], up[1], up[2]));
@@ -186,7 +197,7 @@ void main(uint3 DTid : SV_DispatchThreadID)
     return;
 }
 ```
-> 새로운 정점들 reindexing, 삼각형 생성
+- 새로운 정점들 reindexing, 삼각형 생성
 ```Make New Vertex
 	void MakeNewVertex(int k, int nextIdx, float d[], uint up[], uint down[]){
                 Vertex newVert;
@@ -204,4 +215,4 @@ void main(uint3 DTid : SV_DispatchThreadID)
                 down[dcount] = iNumVert + i1;
 	}
 ```
-> 새로운 정점 생성 루틴
+- 새로운 정점 생성 루틴
