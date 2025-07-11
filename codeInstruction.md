@@ -10,9 +10,9 @@
 
 
 ### BSP Tree 
--Mesh Boolean을 구현하기 위한 핵심 기술로, 특정 메쉬의 모든 평면에 대한 특정 정점의 상대적 위치를 빠르게 계산하기 위해 이진트리 형태의 자료구조를 선택   
--Mesh의 Facet을 기준으로 Mesh를 이진 트리로 나누어 Facet에 대해 정면/후면 판정을 최적화    
--Torus형태의 non convex하고 복잡한 메쉬에 대해 빠르게 Mesh Boolean을 수행하는 성과를 얻음
+- Mesh Boolean을 구현하기 위한 핵심 기술로, 특정 메쉬의 모든 평면에 대한 특정 정점의 상대적 위치를 빠르게 계산하기 위해 이진트리 형태의 자료구조를 선택   
+- Mesh의 Facet을 기준으로 Mesh를 이진 트리로 나누어 Facet에 대해 정면/후면 판정을 최적화    
+- Torus형태의 non convex하고 복잡한 메쉬에 대해 빠르게 Mesh Boolean을 수행하는 성과를 얻음
 
 
 ```mermaid
@@ -27,9 +27,9 @@ graph TD
     E -->|Front| F[BSP_Node]
     E -->|Back| G[BSP_Node]
 ```
--CSG_Mesh : 정점, 노말, UV등 Mesh에 필요한 모든 정보를 담는 구조체([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
--BSP_Node : CSG_Mesh를 통해 구성된 BSP Tree의 Node를 표현([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
--Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
+- CSG_Mesh : 정점, 노말, UV등 Mesh에 필요한 모든 정보를 담는 구조체([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
+- BSP_Node : CSG_Mesh를 통해 구성된 BSP Tree의 Node를 표현([CSG_Data.h](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Public/CSG_Data.h))   
+- Splitter평면의 Front, Back을 기준으로 Mesh를 이진 트리로 분할   
 
 ```mermaid
 ---
@@ -43,7 +43,7 @@ graph LR
     F[BSP_Node]-->G{IndexBuffer}
     G--> C
 ```
--각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함   
+- 각 노드는 Index 정보만 가지며, Splitter Plane에 포함되는 모든 Face의 Index를 저장함   
 
 ```CSG_Manager.cpp
 
@@ -87,7 +87,7 @@ unique_ptr<BSP_Node> CCSG_Manager::BuildBSPTree(CSG_Mesh& mesh, const vector<_ui
 }
 
 ```
--BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+- BSP_Node 생성 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
 
 ```CSG_Union
 void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& nodeB)
