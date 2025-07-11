@@ -1,7 +1,7 @@
 # 코드 설명서
 
-1. [CSG - Mesh Boolean](#1.-CSG--Mesh-Boolean)
-2. [Skinned Mesh Cutter](#2.-Skinned-Mesh-Cutter)
+1. [CSG - Mesh Boolean](#1.-csg--mesh-boolean)
+2. [Skinned Mesh Cutter](#2.-skinned-mesh-cutter)
 
 ## 1. CSG - Mesh Boolean
    <img src="https://github.com/sturdyChair/asset/blob/main/Intersect.PNG" width="600" height="400"/>   
