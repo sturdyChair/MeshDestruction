@@ -105,8 +105,8 @@ void CCSG_Manager::CSG_Union(unique_ptr<BSP_Node>& nodeA, unique_ptr<BSP_Node>& 
 	return;
 }
 ```
--Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
--현제 Union, Intersect, Difference 연산을 지원
+- Mesh Union 연산 루틴([CSG_Manager.cpp](https://github.com/sturdyChair/MeshDestruction/blob/master/Engine/Private/CSG_Manager.cpp))   
+- 현재 Union, Intersect, Difference 연산을 지원
 
 
 ## Skinned Mesh Cutter
